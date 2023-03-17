@@ -1,8 +1,9 @@
 #include <stdio.h>
+
 /**
- * main - Prints the alphabet in lower case.
+ * main - prints the alphabet.
  *
- * Return: 0 (Succes)
+ * Return: always 0
  */
 int main(void)
 {
@@ -11,7 +12,8 @@ int main(void)
 
 	for (i = 0; i < 26; i++)
 	{
-		putchar(alp[i]);
+		putchar (alp[i]);
 	}
-	putchar('\n');
+	putchar ('\n');
 	return (0);
+}
