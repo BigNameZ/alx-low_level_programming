@@ -1,25 +1,28 @@
 #include<stdio.h>
 /**
- * main - prints three digits
+ * main - prints two digits
  * Return: always 0
  */
 int main(void)
 {
 	int i, j, k;
 
-	for (i = '0'; i < '9' ; i++)
+	for (i = '0'; i < '9'; i++)
 	{
-		for (k = j + 1; k <= '9'; k++)
+		for (j = i + 1; j <= '9'; j++)
 		{
-			if ((j != i) != k)
+			for (k = j + 1; k <= '9'; k++)
 			{
-				putchar(i);
-				putchar(j);
-				putchar(k);
-				if (i == '7' && j == '8')
-					continue;
-				putchar(',');
-				putchar(' ');
+				if ((j != i) != k)
+				{
+					putchar(i);
+					putchar(j);
+					putchar(k);
+					if (i == '7' && j == '8')
+						continue;
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
